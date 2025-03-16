@@ -1,0 +1,15 @@
+h1{
+    font-family: 'Tektur', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    cursor: cell;
+    text-decoration: none;
+}
