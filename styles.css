@@ -1,7 +1,18 @@
-h1{
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+h1 a{
     font-family: 'Tektur', sans-serif;
     font-weight: 900;
+    font-size: 90px;
+    padding: 50px;
     text-decoration: none;
+    color: linear-gradient(135deg, #6DC7FF, #E6ABFF, #1A6DFF, #C822FF);
 }
 
 nav ul{
@@ -11,5 +22,52 @@ nav ul{
 nav ul li{
     display: inline;
     cursor: cell;
+}
+nav ul li a {
     text-decoration: none;
+    font-size: 18px;
+    padding: 40px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d8bfda;
+    border-radius: 5px;
+}
+
+/* Search Box Styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.search-box {
+    position: relative;
+    width: 50%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px 10px 15px 15px; 
+    font-size: 18px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-box button {
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-box button img {
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
 }

@@ -5,3 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Hello, welcome to BITS Library!");
     });
 });
+
+document.getElementById("searchBtn").addEventListener("click", function() {
+    let searchQuery = document.getElementById("searchInput").value.trim();
+    
+    if (searchQuery !== "") {
+        window.location.href = `books.html?search=${encodeURIComponent(searchQuery)}`;
+    } else {
+        alert("Please enter a book name!");
+    }
+});
