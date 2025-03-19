@@ -15,3 +15,19 @@ document.getElementById("searchBtn").addEventListener("click", function() {
         alert("Please enter a book name!");
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const books = [
+        { title: "Introduction to AI", file: "book1.pdf", description: "A beginner-friendly introduction to Artificial Intelligence." },
+        { title: "Machine Learning Basics", file: "book2.pdf", description: "Learn the fundamentals of Machine Learning and its applications." }
+    ];
+
+    const bookList = document.getElementById("book-list");
+
+    books.forEach((book, index) => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<a href="book-details.html?id=${index}">${book.title}</a>`;
+        bookList.appendChild(listItem);
+    });
+});

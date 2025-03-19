@@ -1,28 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">BITS Library</a></h1>
+    </header>
 
-.search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
-    width: 500px;
-}
+    <section class="contact-form">
+        <h2>Contact the Library</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-.search-container input {
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    border: 2px solid #333;
-    border-radius: 3px 0 0 3px;
-}
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-.search-container button {
-    padding: 15px;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" required>
 
-.search-container button img {
-    width: 50px;
-    height: 50px;
-}
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="lecturers">
+        <h2>Meet Our Lecturers</h2>
+        <div class="lecturer-container">
+            <div class="lecturer">
+                <img src="images/lecturer1.jpg" alt="Dr. John Doe">
+                <h3>Dr. John Doe</h3>
+                <p>Email: johndoe@university.edu</p>
+            </div>
+            <div class="lecturer">
+                <img src="images/lecturer2.jpg" alt="Prof. Jane Smith">
+                <h3>Prof. Jane Smith</h3>
+                <p>Email: janesmith@university.edu</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BITS Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>

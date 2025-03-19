@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">BITS Library</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="book-details">
+        <h2 id="book-title"></h2>
+        <p id="book-description"></p>
+        <a id="download-btn" href="#" download>Download Book</a>
+    </section>
+
+    <script>
+        const books = [
+            { title: "Introduction to AI", file: "book1.pdf", description: "A beginner-friendly introduction to Artificial Intelligence." },
+            { title: "Machine Learning Basics", file: "book2.pdf", description: "Learn the fundamentals of Machine Learning and its applications." }
+        ];
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const bookId = urlParams.get("id");
+
+        if (bookId !== null && books[bookId]) {
+            document.getElementById("book-title").textContent = books[bookId].title;
+            document.getElementById("book-description").textContent = books[bookId].description;
+            document.getElementById("download-btn").href = "books/" + books[bookId].file;
+        } else {
+            document.querySelector(".book-details").innerHTML = "<p>Book not found.</p>";
+        }
+    </script>
+</body>
+</html>

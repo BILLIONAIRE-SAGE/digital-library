@@ -12,7 +12,7 @@ h1 a{
     font-size: 90px;
     padding: 50px;
     text-decoration: none;
-    color: linear-gradient(135deg, #6DC7FF, #E6ABFF, #1A6DFF, #C822FF);
+    color:  #6c21d6;
 }
 
 nav ul{
@@ -70,4 +70,80 @@ nav ul li a:hover {
     width: 30px;
     height: 30px;
     pointer-events: none;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #2659B3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #A71ED4;
+}
+
+/* Lecturers Section */
+.lecturers {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.lecturer-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lecturer {
+    width: 200px;
+    text-align: center;
+}
+
+.lecturer img {
+    width: 100%;
+    border-radius: 10px;
 }
