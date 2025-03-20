@@ -19,28 +19,14 @@
         </nav>
     </header>
 
-    <section class="book-details">
-        <h2 id="book-title"></h2>
-        <p id="book-description"></p>
-        <a id="download-btn" href="#" download>Download Book</a>
+    <section 
+     id="book-list" class="book-container">
     </section>
 
-    <script>
-        const books = [
-            { title: "Core_PHP_Programming_3rd_Edition_-_Leon_Atkinson", file: "book1.pdf", description: "Core PHP Programming is now updated for PHP 5. The new object model allows for genuine object-oriented programming, and the book now covers design patterns. All existing PHP developers will want to find out about these new features.." },
-            { title: "Machine Learning Basics", file: "book2.pdf", description: "Learn the fundamentals of Machine Learning and its applications." }
-        ];
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const bookId = urlParams.get("id");
-
-        if (bookId !== null && books[bookId]) {
-            document.getElementById("book-title").textContent = books[bookId].title;
-            document.getElementById("book-description").textContent = books[bookId].description;
-            document.getElementById("download-btn").href = "books/" + books[bookId].file;
-        } else {
-            document.querySelector(".book-details").innerHTML = "<p>Book not found.</p>";
-        }
-    </script>
+    <footer>
+        <p>&copy; 2025 BITS Library. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>

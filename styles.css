@@ -73,14 +73,6 @@ nav ul li a:hover {
 }
 
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
-
 /* Contact Form Styling */
 .contact-form {
     width: 50%;
@@ -113,7 +105,7 @@ footer {
 }
 
 .contact-form button {
-    background-color: #2659B3;
+    background-color: #2344bc;
     color: white;
     padding: 10px;
     border: none;
@@ -123,7 +115,7 @@ footer {
 }
 
 .contact-form button:hover {
-    background-color: #A71ED4;
+    background-color: #6051b0;
 }
 
 /* Lecturers Section */
@@ -146,4 +138,12 @@ footer {
 .lecturer img {
     width: 100%;
     border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
